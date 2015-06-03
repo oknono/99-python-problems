@@ -28,3 +28,33 @@
 #26 Generate the combinations of K distinct objects chosen from the N elements of a list
 #27 Group the elements of a set into disjoint subsets
 #28 Sorting a list of lists according to length of sublists
+
+if __name__ == "__main__":
+    #print "Exercise #01:" ,
+    #print "Exercise #02:" ,
+    #print "Exercise #03:" ,
+    #print "Exercise #04:" ,
+    #print "Exercise #05:" ,
+    #print "Exercise #06:" ,
+    #print "Exercise #07:" ,
+    #print "Exercise #08:" ,
+    #print "Exercise #09:" ,
+    #print "Exercise #10:" ,
+    #print "Exercise #11:" ,
+    #print "Exercise #12:" ,
+    #print "Exercise #13:" ,
+    #print "Exercise #14:" ,
+    #print "Exercise #15:" ,
+    #print "Exercise #16:" ,
+    #print "Exercise #17:" ,
+    #print "Exercise #18:" ,
+    #print "Exercise #19:" ,
+    #print "Exercise #20:" ,
+    #print "Exercise #21:" ,
+    #print "Exercise #22:" ,
+    #print "Exercise #23:" ,
+    #print "Exercise #24:" ,
+    #print "Exercise #25:" ,
+    #print "Exercise #26:" ,
+    #print "Exercise #27:" ,
+    #print "Exercise #28:" ,
