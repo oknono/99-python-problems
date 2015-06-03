@@ -9,7 +9,10 @@ def last_element(some_list):
 def last_but_one(some_list):
 	return some_list[-2]
 
-#03 Find the k'th element of a list
+#03 Find the k'th element of a list (0 index)
+def k_element(some_list, k):
+	return some_list[k]
+
 #04 Find the number of element in a list
 #05 Reverse a list
 #06 Find out if a list is a palindrome
@@ -36,12 +39,15 @@ def last_but_one(some_list):
 #27 Group the elements of a set into disjoint subsets
 #28 Sorting a list of lists according to length of sublists
 
+test_list = [1, 2, 3, 4]
+
 if __name__ == "__main__":
     print "Exercise #01:" ,
-    print last_element([1,2,3,4]) == 4
+    print last_element(test_list) == 4
     print "Exercise #02:" ,
-    print last_but_one([1,2,3,4]) == 3
-    #print "Exercise #03:" ,
+    print last_but_one(test_list) == 3
+    print "Exercise #03:" ,
+    print k_element(test_list, 0) == 1
     #print "Exercise #04:" ,
     #print "Exercise #05:" ,
     #print "Exercise #06:" ,
