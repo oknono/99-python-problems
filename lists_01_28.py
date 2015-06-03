@@ -18,6 +18,8 @@ def length_list(some_list):
 	return len(some_list)
 
 #05 Reverse a list
+def reverse_list(some_list):
+	return list(reversed(some_list))
 #06 Find out if a list is a palindrome
 #07 Flatten a nested list 
 #08 Eliminate consecutive duplicates of list elements
@@ -53,7 +55,8 @@ if __name__ == "__main__":
     print k_element(test_list, 0) == 1
     print "Exercise #04:" ,
     print length_list(test_list) == 4
-    #print "Exercise #05:" ,
+    print "Exercise #05:" ,
+    print reverse_list(test_list) == [4, 3, 2, 1]
     #print "Exercise #06:" ,
     #print "Exercise #07:" ,
     #print "Exercise #08:" ,
