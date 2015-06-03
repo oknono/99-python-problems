@@ -20,7 +20,11 @@ def length_list(some_list):
 #05 Reverse a list
 def reverse_list(some_list):
 	return list(reversed(some_list))
+
 #06 Find out if a list is a palindrome
+def palindrome(some_list):
+	return reverse_list(some_list) == some_list
+
 #07 Flatten a nested list 
 #08 Eliminate consecutive duplicates of list elements
 #09 Pack consecutive duplicates of list elements into sublists
@@ -45,6 +49,7 @@ def reverse_list(some_list):
 #28 Sorting a list of lists according to length of sublists
 
 test_list = [1, 2, 3, 4]
+palindrome_list = ['a', 'n', 'n', 'a']
 
 if __name__ == "__main__":
     print "Exercise #01:" ,
@@ -57,7 +62,8 @@ if __name__ == "__main__":
     print length_list(test_list) == 4
     print "Exercise #05:" ,
     print reverse_list(test_list) == [4, 3, 2, 1]
-    #print "Exercise #06:" ,
+    print "Exercise #06:" ,
+    print palindrome(palindrome_list)
     #print "Exercise #07:" ,
     #print "Exercise #08:" ,
     #print "Exercise #09:" ,
