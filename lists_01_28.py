@@ -13,7 +13,10 @@ def last_but_one(some_list):
 def k_element(some_list, k):
 	return some_list[k]
 
-#04 Find the number of element in a list
+#04 Find the number of elements in a list
+def length_list(some_list):
+	return len(some_list)
+
 #05 Reverse a list
 #06 Find out if a list is a palindrome
 #07 Flatten a nested list 
@@ -48,7 +51,8 @@ if __name__ == "__main__":
     print last_but_one(test_list) == 3
     print "Exercise #03:" ,
     print k_element(test_list, 0) == 1
-    #print "Exercise #04:" ,
+    print "Exercise #04:" ,
+    print length_list(test_list) == 4
     #print "Exercise #05:" ,
     #print "Exercise #06:" ,
     #print "Exercise #07:" ,
