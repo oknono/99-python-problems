@@ -1,6 +1,9 @@
 # Problems taken from https://sites.google.com/site/prologsite/prolog-problems/1
 
 #01 Find the last element of a list
+def last_element(some_list):
+	return some_list[-1]
+
 #02 Find the last but one element of a list
 #03 Find the k'th element of a list
 #04 Find the number of element in a list
@@ -30,7 +33,8 @@
 #28 Sorting a list of lists according to length of sublists
 
 if __name__ == "__main__":
-    #print "Exercise #01:" ,
+    print "Exercise #01:" ,
+    print last_element([1,2,3,4]) == 4
     #print "Exercise #02:" ,
     #print "Exercise #03:" ,
     #print "Exercise #04:" ,
