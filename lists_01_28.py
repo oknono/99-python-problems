@@ -30,6 +30,15 @@ def flatten(some_list):
 	return [item for inner_list in some_list for item in inner_list]
 
 #08 Eliminate consecutive duplicates of list elements
+def eliminate_cons(some_list):
+	check = None
+	new_list = []
+	for element in some_list:
+		if element != check:
+			new_list.append(element)
+		check = element
+	return new_list
+
 #09 Pack consecutive duplicates of list elements into sublists
 #10 Run Length encoding of a list 
 #11 Modified run length encoding
@@ -54,6 +63,7 @@ def flatten(some_list):
 test_list = [1, 2, 3, 4]
 palindrome_list = ['a', 'n', 'n', 'a']
 nested_list = [[1, 2], 'z', test_list, palindrome_list]
+eli_list = ['a', 'a', 'b', 'c', 'c', 'c', 'c']
 
 if __name__ == "__main__":
     print "Exercise #01:" ,
@@ -70,7 +80,8 @@ if __name__ == "__main__":
     print palindrome(palindrome_list)
     print "Exercise #07:" ,
     print flatten(nested_list) == [1, 2, 'z', 1, 2, 3, 4, 'a', 'n', 'n', 'a']
-    #print "Exercise #08:" ,
+    print "Exercise #08:" ,
+    print eliminate_cons(eli_list) == ['a', 'b', 'c']
     #print "Exercise #09:" ,
     #print "Exercise #10:" ,
     #print "Exercise #11:" ,
