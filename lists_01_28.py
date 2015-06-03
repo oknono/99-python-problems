@@ -25,7 +25,10 @@ def reverse_list(some_list):
 def palindrome(some_list):
 	return reverse_list(some_list) == some_list
 
-#07 Flatten a nested list 
+#07 Flatten a nested list - doesn't work for ints not in a list
+def flatten(some_list):
+	return [item for inner_list in some_list for item in inner_list]
+
 #08 Eliminate consecutive duplicates of list elements
 #09 Pack consecutive duplicates of list elements into sublists
 #10 Run Length encoding of a list 
@@ -50,6 +53,7 @@ def palindrome(some_list):
 
 test_list = [1, 2, 3, 4]
 palindrome_list = ['a', 'n', 'n', 'a']
+nested_list = [[1, 2], 'z', test_list, palindrome_list]
 
 if __name__ == "__main__":
     print "Exercise #01:" ,
@@ -64,7 +68,8 @@ if __name__ == "__main__":
     print reverse_list(test_list) == [4, 3, 2, 1]
     print "Exercise #06:" ,
     print palindrome(palindrome_list)
-    #print "Exercise #07:" ,
+    print "Exercise #07:" ,
+    print flatten(nested_list) == [1, 2, 'z', 1, 2, 3, 4, 'a', 'n', 'n', 'a']
     #print "Exercise #08:" ,
     #print "Exercise #09:" ,
     #print "Exercise #10:" ,
