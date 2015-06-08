@@ -1,5 +1,6 @@
 # Flatten a nested list 
 # This method does not work for a singleton integer
+# https://wiki.python.org/moin/ProblemSets/99%20Prolog%20Problems%20Solutions#Problem_7:_Flatten_a_nested_list_structure
 
 def flatten(some_list):
     return [item for inner_list in some_list for item in inner_list]
