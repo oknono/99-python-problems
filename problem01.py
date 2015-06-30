@@ -7,6 +7,6 @@ def last_element(some_list):
         return None
 
 if __name__ == "__main__":
-    print "Last element of [] is " + str(last_element([]))
-    print "Last elememt of [1] is " + str(last_element([1]))
-    print "Last element of ['a', 'b', 'c'] is " + str(last_element(['a', 'b', 'c']))
+    print "Last element of [] is {0} ".format(last_element([]))
+    print "Last element of [1, 2, 3, 4] is {0} ".format(last_element([1, 2, 3, 4]))
+    print "Last element of ['a', 'b', 'c'] is {0} ".format(last_element(['a', 'b', 'c']))
