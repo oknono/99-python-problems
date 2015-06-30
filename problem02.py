@@ -6,6 +6,6 @@ def last_but_one(some_list):
         return None
 
 if __name__ == "__main__":
-    print "last but one of [] is " +  str(last_but_one([]))
-    print "last but one of [1] is " + str(last_but_one([1]))
-    print "last but one of [1, 2, 'b', 3] is " +  str(last_but_one([1, 2, 'b', 3])) 
+    print "last but one of [] is {0}".format(last_but_one([]))
+    print "last but one of [1] is {0}".format(last_but_one([1]))
+    print "last but one of [1, 2, 'b', 3] is {0}".format(last_but_one([1, 2, 'b', 3])) 
