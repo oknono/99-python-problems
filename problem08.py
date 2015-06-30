@@ -10,6 +10,4 @@ def eliminate_cons(some_list):
 
 if __name__ == "__main__":
     l = ['a', 'a', 'b', 'c', 'c', 'c', 'c', 'a']
-    print l 
-    print eliminate_cons(l)
-
+    print "Eliminating doubles from {0} gives {1}".format(l, eliminate_cons(l))
